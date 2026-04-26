@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: rgba(3, 29, 24, 0.75);
+    color: #fff;
+    padding: 10px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-info {
+    text-align: left;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-links a img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-info {
+    text-align: right;
+}
+
+.footer-info p {
+    font-size: 14px;
+}

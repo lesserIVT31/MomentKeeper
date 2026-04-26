@@ -1,0 +1,77 @@
+.profile-block {
+    display: flex;
+    margin: 10px 25%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 2px solid #fff; /* Пример граничной рамки */
+    background-color: rgba(3, 29, 24, 0.75)
+}
+
+.profile-left-section {
+    flex: 1;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.avatar {
+    border: 3px solid #fff; /* Пример рамки для аватара */
+    border-radius: 50%; /* Для создания круглой аватарки */
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    left: 0;
+    top: 0;
+}
+
+.avatar img {
+    width: 99px;
+    height: 99px;
+    border-radius: 50%;
+}
+
+.nickname {
+    margin: 10px 0;
+}
+
+.about {
+    text-align: left;
+    margin: 0 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.profile-right-section {
+    flex: 1;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.reactions, .comments {
+    margin: 10px 0;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Стили для маленьких блоков с фотографиями */
+.photos .photo {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid #fff; /* Пример рамки для фотографий автора */
+    border-radius: 10px;
+}
+
+.photos .photo img {
+    width: 98px;
+    height: 98px;
+    border-radius: 10px;
+}

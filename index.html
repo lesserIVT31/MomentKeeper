@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-widgth, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./styles/MainPageNoAuth/body_style.css">
+        <link rel="stylesheet" href="./styles/MainPageNoAuth/header_style.css">
+        <link rel="stylesheet" href="./styles/MainPageNoAuth/main_style.css">
+        <link rel="stylesheet" href="./styles/MainPageNoAuth/footer_style.css">
+        <title>PupuWoo</title>
+    </head>
+    <body id="background-changer">
+        <section class="header_wrap"> <!--Хэдер-->
+            <header>
+                <div class="logo">
+                    <a href="./index.html"><img src="./images/logo.svg"></a>
+                </div>
+                <div class="menu-icon" id="menu-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <nav>
+                        <ul>
+                            <li></li>
+                            <li>
+                                <button class="login">Логин</button>
+                            </li>
+                            <li>
+                                <button class="register">Регистрация</button>
+                            </li>
+                            <li>
+                                <form class="search-form">
+                                    <input class="search-input" type="text" placeholder="Поиск фотографий или авторов">
+                                    <button class="search-button" type="submit"></button>
+                                </form>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu">
+                    <div class="search">
+                        <form class="search-form">
+                            <input class="search-input" type="text" placeholder="Поиск фотографий или авторов">
+                            <button class="search-button" type="submit"></button>
+                        </form>
+                    </div>
+                    <div class="buttons">
+                        <button class="login">Логин</button>
+                        <button class="register">Регистрация</button>
+                    </div>
+                </div>
+            </header>
+        </section>
+        <section class="container"> <!--Тело страницы-->
+            <div class="content">
+                <h1>Найдите своё вдохновение</h1>
+                <p>Загружайте свои фотографии</p>
+                <p>и вдохновляйтесь другими авторами</p>
+                <button><a href="./Galery.html">Начать сейчас</a></button>
+            </div>
+        </section>
+        <section> <!--Футер-->
+            <footer>
+                <div class="footer-content">
+                    <div class="company-info">
+                       <p>Лессер ИВТ-31</p>
+                       <p>kakerutatzya@gmail.com</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://https://vk.com/sin_anger"><img src="./images/VK Logo.svg" alt="Вконтаке"></a>
+                        <a href="https://t.me/sinanger"><img src="./images/tg logo.svg" alt="Telegram"></a>
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <p>&copy; 2026, Все права защищены</p>
+                </div>
+            </footer>
+        </section>
+        <script>
+            const menuIcon = document.getElementById("menu-icon");
+            const nav = document.querySelector("nav");
+
+            menuIcon.addEventListener("click", () => {
+                nav.classList.toggle("active"); // Добавить или удалить класс "active" у элемента nav
+            });
+        </script>
+        <script>
+            const backgrounds = ['./images/background/BackgroundImage001.jpg',
+            './images/background/BackgroundImage002.jpg', './images/background/BackgroundImage003.jpg',
+            './images/background/BackgroundImage004.jpg', './images/background/BackgroundImage005.jpg'];
+            const backgroundChanger = document.getElementById('background-changer');
+            let currentIndex = 0;
+
+            function changeBackground() {
+                currentIndex = (currentIndex + 1) % backgrounds.length;
+                const nextBackground = backgrounds[currentIndex];
+                backgroundChanger.style.backgroundImage = `url(${nextBackground})`;
+            }
+
+            setInterval(changeBackground, 10000); // 10 секунд
+        </script>
+    </body>
+</html>

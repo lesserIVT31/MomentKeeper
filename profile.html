@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-widgth, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./styles/GalleryPage/body_style.css">
+        <link rel="stylesheet" href="./styles/GalleryPage/header_style.css">
+        <link rel="stylesheet" href="./styles/GalleryPage/footer_style.css">
+        <link rel="stylesheet" href="./styles/GalleryPage/main_style.css">
+        <link rel="stylesheet" href="./styles/AccountPage/main_style.css">
+        <title>PupuWoo</title>
+    </head>
+    <body>
+        <section class="header_wrap"> <!--Хэдер-->
+            <header>
+                <div class="logo">
+                    <a href="./index.html"><img src="./images/logo.svg"></a>
+                </div>
+                <div class="menu-icon" id="menu-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <nav>
+                        <ul>
+                            <li></li>
+                            <li>
+                                <form class="search-form">
+                                    <input class="search-input" type="text" placeholder="Поиск фотографий или авторов">
+                                    <button class="search-button" type="submit"></button>
+                                </form>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu">
+                    <div class="buttons">
+                        <a href="Galery.html">
+                            <button id="login-btn" class="login">Галерея</button>
+                        </a>
+                    </div>
+                    <div class="search">
+                        <form class="search-form">
+                            <input class="search-input" type="text" placeholder="Поиск фотографий или авторов">
+                            <button class="search-button" type="submit"></button>
+                        </form>
+                    </div>
+                </div>
+            </header>
+        </section>
+    <section>
+        <div class="section-name"> <!--Название раздела-->
+            <h1>Профиль</h1>
+        </div>
+        <div class="profile-block">
+            <div class="profile-left-section">
+                <div class="avatar">
+                    <img src="./images/avatar/avatar.jpg" alt="Аватар">
+                </div>
+                <div class="nickname">
+                    <h3>lesser_artem</h3>
+                </div>
+                <div class="about">
+                    <p>Лессер Артем. Студент группы ИВТ-31</p>
+                </div>
+            </div>
+            <div class="profile-right-section">
+                <div class="reactions">
+                    <p>Реакции: <span id="reaction-count">0</span></p>
+                </div>
+                <div class="comments">
+                    <p>Комментарии: <span id="comment-count">0</span></p>
+                </div>
+                <div class="photos">
+                    <div class="photo">
+                        <img src="./images/photos/photo1.jpg">
+                    </div>
+                    <div class="photo">
+                        <img src="./images/photos/photo2.jpg">
+                    </div>
+                    <div class="photo">
+                        <img src="./images/photos/photo3.jpg">
+                    </div>
+                    <div class="photo">
+                        <img src="./images/photos/photo4.jpg">
+                    </div>
+                    <div class="photo">
+                        <img src="./images/photos/photo5.jpg">
+                    </div>
+                    <div class="photo">
+                        <img src="./images/photos/photo6.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-photos"> <!--Тело для фоток-->
+            <div class="add-button">
+                <button id="open-modal">+</button>
+            </div>
+            <div class="photo-tile" data-src="./images/photos/photo1.jpg" data-tile="Название фотографии" data-author="Автор фотографии">
+                <img src="./images/photos/photo1.jpg" alt="Фотография 1">
+                <div class="photo-details">
+                    <p>Название фотографии 1</p>
+                    <p>Автор: Имя Автора</p>
+                </div>
+            </div>
+
+            <div class="photo-tile" data-src="./images/photos/photo2.jpg" data-tile="Название фотографии" data-author="Автор фотографии">
+                <img src="./images/photos/photo2.jpg" alt="Фотография 2">
+                <div class="photo-details">
+                    <p>Название фотографии 1</p>
+                    <p>Автор: Имя Автора</p>
+                </div>
+            </div>
+
+            <div class="photo-tile" data-src="./images/photos/photo3.jpg" data-tile="Название фотографии" data-author="Автор фотографии">
+                <img src="./images/photos/photo3.jpg" alt="Фотография 3">
+                <div class="photo-details">
+                    <p>Название фотографии 1</p>
+                    <p>Автор: Имя Автора</p>
+                </div>
+            </div>
+
+            <div class="photo-tile" data-src="./images/photos/photo4.jpg" data-tile="Название фотографии" data-author="Автор фотографии">
+                <img src="./images/photos/photo4.jpg" alt="Фотография 4">
+                <div class="photo-details">
+                    <p>Название фотографии 1</p>
+                    <p>Автор: Имя Автора</p>
+                </div>
+            </div>
+
+            <div class="photo-tile" data-src="./images/photos/photo5.jpg" data-tile="Название фотографии" data-author="Автор фотографии">
+                <img src="./images/photos/photo5.jpg" alt="Фотография 5">
+                <div class="photo-details">
+                    <p>Название фотографии 1</p>
+                    <p>Автор: Имя Автора</p>
+                </div>
+            </div>
+
+            <div class="photo-tile" data-src="./images/photos/photo6.jpg" data-tile="Название фотографии" data-author="Автор фотографии">
+                <img src="./images/photos/photo6.jpg" alt="Фотография 6">
+                <div class="photo-details">
+                    <p>Название фотографии 1</p>
+                    <p>Автор: Имя Автора</p>
+                </div>
+            </div>
+
+            <div class="photo-tile" data-src="./images/photos/photo7.jpg" data-tile="Название фотографии" data-author="Автор фотографии">
+                <img src="./images/photos/photo7.jpg" alt="Фотография 7">
+                <div class="photo-details">
+                    <p>Название фотографии 1</p>
+                    <p>Автор: Имя Автора</p>
+                </div>
+            </div>
+
+            <div class="photo-tile" data-src="./images/photos/photo8.jpg" data-tile="Название фотографии" data-author="Автор фотографии">
+                <img src="./images/photos/photo8.jpg" alt="Фотография 8">
+                <div class="photo-details">
+                    <p>Название фотографии 1</p>
+                    <p>Автор: Имя Автора</p>
+                </div>
+            </div>
+
+            <div class="photo-tile" data-src="./images/photos/photo9.jpg" data-tile="Название фотографии" data-author="Автор фотографии">
+                <img src="./images/photos/photo9.jpg" alt="Фотография 9">
+                <div class="photo-details">
+                    <p>Название фотографии 1</p>
+                    <p>Автор: Имя Автора</p>
+                </div>
+            </div>
+
+            <div id="overlay"></div>
+
+            <div id="myModal" class="modal">
+                <div class="modal-name">
+                    <img src="./images/back.svg" id="back-button" alt="Назад">
+                    <h1>Публикация фотографии</h1>
+                </div>
+                <div class="modal-content">
+                    <div class="left-section">
+                        <input type="file" id="fileInput">
+                        <img id="uploadImage" alt="Загрузите фотографию" src="./images/background/BackgroundImage001.jpg">
+                        <button id="uploadButton">Загрузить фотографию</button>
+                    </div>
+                    <div class="right-section">
+                        <input type="text" id="imageTitle" placeholder="Название фотографии">
+                        <button id="publishButton">Опубликовать</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="look-photo-modal" class="look-modal">
+                <div class="modal-name">
+                    <h2 id="modal-title">Заголовок модального окна</h2>
+                </div>
+                <div class="modal-content">
+                    <div class="reactions-comments">
+                        <div class="modal-image">
+                            <img id="modal-image" src="" alt="Увеличенная фотография">
+                        </div>
+                        <div class="modal-details">
+                            <div class="reactions">
+                                <h3>Реакции</h3>
+                                <p id="reaction-count">0</p>
+                                <button id="add-reaction">Добавить реакцию</button>
+                            </div>
+                            <div class="comments">
+                                <h3>Комментарии</h3>
+                                <ul id="comments-list">
+                                    <!-- Ваши комментарии будут добавлены сюда -->
+                                </ul>
+                                <input type="text" id="comment-input" placeholder="Напишите комментарий">
+                                <button id="add-comment">Добавить комментарий</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section> <!--Футер-->
+        <footer>
+            <div class="footer-content">
+                <div class="company-info">
+                    <p>Лессер ИВТ-31</p>
+                    <p>kakerutatzya@gmail.com</p>
+                </div>
+                <div class="social-links">
+                        <a href="https://https://vk.com/sin_anger"><img src="./images/VK Logo.svg" alt="Вконтаке"></a>
+                        <a href="https://t.me/sinanger"><img src="./images/tg logo.svg" alt="Telegram"></a>
+                </div>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2026, Все права защищены</p>
+            </div>
+        </footer>
+    </section>
+    <script> <!--Кнопка +-->
+        const openButton = document.getElementById('open-modal');
+        const closeButton = document.getElementById('back-button');
+        const modal = document.getElementById('myModal');
+        const overlay = document.getElementById('overlay');
+        const fileInput = document.getElementById("fileInput");
+        const uploadedImage = document.getElementById("uploadedImage");
+        const imageTitle = document.getElementById("imageTitle");
+        const publishButton = document.getElementById("publishButton");
+        const uploadButton = document.getElementById("uploadButton");
+        
+        openButton.addEventListener('click', () => {
+            modal.style.display = 'block';
+            overlay.style.display = 'block';
+        });
+
+        closeButton.addEventListener('click', () => {
+            modal.style.display = 'none';
+            overlay.style.display = 'none';
+        });
+
+        overlay.addEventListener('click', () => {
+            modal.style.display = 'none';
+            overlay.style.display = 'none';
+        });
+
+        // Обработчик выбора файла
+        fileInput.addEventListener("change", function() {
+            const file = fileInput.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    uploadedImage.src = e.target.result;
+                    uploadedImage.style.display = "block";
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Обработчик нажатия кнопки "Опубликовать"
+        publishButton.addEventListener("click", function() {
+            const title = imageTitle.value;
+            // Здесь можно обработать данные и отправить на сервер, если необходимо
+            // Затем можно закрыть модальное окно
+            closeModal();
+        });
+        </script>
+        <script> <!--Открытие фотографии-->
+            document.addEventListener("DOMContentLoaded", function() {
+                const photoTiles = document.querySelectorAll(".photo-tile");
+                photoTiles.forEach((tile) => {
+                    tile.addEventListener("click", () => {
+                        // Получите данные из атрибутов data-*
+                        const src = tile.getAttribute("data-src");
+                        const title = tile.getAttribute("data-title");
+                        const author = tile.getAttribute("data-author");
+
+                        // Получите элементы модального окна
+                        const modal = document.getElementById("look-photo-modal");
+                        const modalTitle = document.getElementById("modal-title");
+                        const modalImage = document.getElementById("modal-image");
+                        const overlay = document.getElementById("overlay");
+
+                        // Установите заголовок модального окна
+                        modalTitle.textContent = title + author;
+
+                        // Установите изображение модального окна
+                        modalImage.src = src;
+
+                        // Показать модальное окно
+                        overlay.style.display = "block";
+                        modal.style.display = "block";
+                    });
+                });
+
+                let reactionCount = 0;
+
+                // Обработчик события для добавления реакции
+                const addReactionButton = document.getElementById("add-reaction");
+                const reactionCountElement = document.getElementById("reaction-count");
+
+                addReactionButton.addEventListener("click", () => {
+                    if (addReactionButton.classList.contains("active")) {
+                        // Если кнопка имеет класс "active", уменьшите счетчик на 1 и удалите класс     
+                        reactionCountElement++;
+                        addReactionButton.classList.remove("active");
+                    } else {
+                        // В противном случае, увеличьте счетчик на 1 и добавьте класс
+                        reactionCountElement++; 
+                        addReactionButton.classList.add("active");
+                    }
+
+                    // Обновите отображаемое количество реакций
+                    reactionCount.textContent = reactionCountElement;
+                });
+
+                // Обработчик события для закрытия модального окна
+                overlay.addEventListener("click", () => {
+                    const modal = document.getElementById("look-photo-modal");
+                    modal.style.display = "none";
+                    overlay.style.display = "none";
+                });
+            });
+        </script>
+    </body>
+</html>
